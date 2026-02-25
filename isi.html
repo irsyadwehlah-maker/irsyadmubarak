@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Isi</title>
+</head>
+<body>
+    <h1>Ini Adalah Halaman Isi</h1>
+    <p>Ini adalah tempat konten kamu berada.</p>
+    
+<a href="index.html" style="color : white;">kembali ke beranda</a>
+</body>
+<!DOCTYPE html>
+<html lang="id">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>Materi Tugas TJKT - Muhammad Irsyad</title>
+    <style>/* Mengatur Font dan Dasar */
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.8;
+    color: #e2e8f0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    margin: 0;
+    padding: 40px 20px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Animasi Muncul */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Judul Utama */
+h1 {
+    font-size: 3rem;
+    color: #38bdf8;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+/* Garis Pembatas Modern */
+hr {
+    border: 0;
+   height: 2px;
+    background: linear-gradient(to right, transparent, #38bdf8, transparent);
+    margin: 40px 0;
+}
+
+/* Section Header */
+h2 {
+    color: #ffffff;
+    background: linear-gradient(90deg, #0ea5e9, #22c55e);
+    padding: 12px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #38bdf8;
+    border-left: 4px solid #38bdf8;
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
+/* Styling Kode CMD */
+code {
+    background-color: #000;
+    color: #4ade80;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.95em;
+    border: 1px solid #334155;
+}
+
+/* Container List (Glassmorphism Effect) */
+ul, ol {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px 50px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    list-style-position: inside;
+}
+
+li {
+    margin-bottom: 12px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateX(10px);
+    color: #38bdf8;
+}
+
+/* Styling Tabel Modern */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 40px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: #1e293b;
+}
+
+thead tr {
+    background: linear-gradient(90deg, #0ea5e9, #2563eb) !important;
+}
+
+th {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+td {
+    padding: 18px;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: #2d3e50;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* Gambar Profil & Tabel */
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #38bdf8;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+img:hover {
+    transform: scale(1.5) rotate(5deg);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+    z-index: 10;
+}
+
+/* Info Nama & Kelas */
+center p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+}
+
+center p strong {
+    color: #f8fafc;
+}
+
+/* Scrollbar Keren */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #38bdf8;
+    border-radius: 5px;
+}
+   /* Tambahkan ini di bagian atas CSS */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Mengunci geser kanan-kiri halaman utama */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Edit padding body agar konten tidak mepet layar */
+body {
+    padding: 40px 20px;
+}
+
+/* --- Pengaturan Khusus Tabel --- */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Hanya bagian ini yang boleh digeser */
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: #1e293b;
+    -webkit-overflow-scrolling: touch; /* Scroll halus di HP */
+}
+
+/* Pastikan tabel tetap lebar agar enak digeser di layar kecil */
+table {
+    min-width: 800px; /* Tabel tidak akan mengecil kurang dari 800px */
+    width: 100%;
+    margin: 0; /* Margin pindah ke container */
+    box-shadow: none; /* Shadow pindah ke container */
+}
+
+</style>
+</head>
+<body>
+
+
+
+    <hr>
+
+    <center><h2>Intrusi Command Prompt (CMD)</h2></center>
+
+    <h3>1. ipconfig</h3>
+    <p>Lihat konfigurasi IP, refresh DHCP</p>
+    <ul>
+        <li>"ipconfig /all" Tampilkan detail lengkap</li>
+        <li>"ipconfig /release" Lepas alamat IP</li>
+        <li>"ipconfig /renew" Dapatkan IP baru</li>
+        <li>"ipconfig /flushdns" Membersihkan cache DNS</li>
+    </ul>
+
+    <h3>2. ping</h3>
+    <p>Mengecek informasi ke alamat IP atau domain</p>
+    <p>Contoh: <code>ping google.com</code></p>
+    <ul>
+        <li>"ping -t [alamat]" Ping terus menerus sampai dihentikan (CTRL + C)</li>
+        <li>"ping -n [jumlah] [alamat]" Menentukan berapa kali ping dilakukan. Contoh: <code>ping -n 10 google.com</code></li>
+        <li>"ping -l [ukuran] [alamat]" Mengatur ukuran paket data (byte). Contoh: <code>ping -l 1000 google.com</code></li>
+        <li>"ping -4 / -6 [alamat]" Memaksa penggunaan IPv4 atau IPv6</li>
+        <li>"ping -a [alamat IP]" Mencoba mencari nama host dari IP. Contoh: <code>ping -a 8.8.8.8</code></li>
+    </ul>
+
+    <h3>3. "tracert"</h3>
+    <p>Melacak rute (jalur) yang dilalui paket data menuju alamat tujuan. Contoh: <code>tracert google.com</code></p>
+
+    <h3>4. "netstat"</h3>
+    <p>Menampilkan koneksi jaringan aktif dan port yang digunakan. Contoh: <code>netstat -an</code></p>
+
+    <h3>5. "nslookup"</h3>
+    <p>Mengecek informasi DNS dari sebuah domain. Contoh: <code>nslookup google.com</code></p>
+
+    <h3>6. "arp"</h3>
+    <p>Menampilkan dan memodifikasi tabel ARP (Address Resolution Protocol). Contoh: <code>arp -a</code></p>
+
+    <h3>7. "hostname"</h3>
+    <p>Menampilkan nama komputer saat ini. Contoh: <code>hostname</code></p>
+
+    <h3>8. "netsh"</h3>
+    <p>Menampilkan konfigurasi jaringan (Contoh: profil wifi). Contoh: <code>netsh wlan show profiles</code></p>
+
+    <br><hr><br>
+
+    <center><h2>IP Address</h2></center>
+    <p>IP address adalah sebuah alamat yang dimiliki setiap perangkat secara global.</p>
+    
+    <h3>Kelas IP</h3>
+    <ul>
+        <li><strong>Kelas A</strong>: 10.10.0.2 | Gateway: 10.10.0.1 | Subnetmask: 255.0.0.0</li>
+        <li><strong>Kelas B</strong>: 176.10.0.2 | Gateway: 176.10.0.1 | Subnetmask: 255.255.0.0</li>
+        <li><strong>Kelas C</strong>: 192.168.0.2 | Gateway: 192.168.0.1 | Subnetmask: 255.255.255.0</li>
+        <li><strong>Kelas D</strong>: 224.0.0.2 | Gateway: 224.0.0.1 (Multicast)</li>
+        <li><strong>Kelas E</strong>: 240.0.0.2 | Gateway: 240.0.0.1 (Experimental)</li>
+    </ul>
+
+    <br><hr><br>
+
+    <center><h2>Voltase Dan Watt Peralatan Elektronik</h2></center>
+
+    <p><strong>1. Mejikom</strong> - Voltase: 220v | Daya: Memasak (300-800w), Menghangatkan (50-100w)</p>
+    <p><strong>2. TV</strong> - Voltase: 220v | Daya: 30-50 watt</p>
+    <p><strong>3. Dispenser</strong> - Voltase: 220v | Daya: Pemanas (300-500w), Pendingin (80-120w)</p>
+    <p><strong>4. Setrika</strong> - Voltase: 220v | Daya: 300-600 watt (Uap bisa sampai 1000w)</p>
+    <p><strong>5. Kulkas</strong> - Voltase: 220v | Daya: 70-200 watt</p>
+    <p><strong>6. Laptop</strong> - Voltase Adaptor: 100-240v | Daya: 45-90 watt</p>
+    <p><strong>7. PC</strong> - Voltase: 220v | Daya: Biasa (200-400w), Gaming (500-800w)</p>
+    <p><strong>8. HP</strong> - Voltase Pengisian: 5v | Daya: 5-25 watt</p>
+    <p><strong>9. Mesin Cuci</strong> - Voltase: 220v | Daya: 300-500 watt</p>
+    <p><strong>10. Charger</strong> - Input: 220v | Output: Normal (5v-2a/10w), Fast Charging (15-33w)</p>
+
+    <br><hr><br>
+
+    <center><h2>Aplikasi Virtual</h2></center>
+
+    <h3>a. VirtualBox</h3>
+    <p><strong>Pengertian:</strong> Software virtual gratis (open source) buatan Oracle yang digunakan untuk menjalankan sistem operasi (VM) di dalam suatu komputer fisik.</p>
+    <p><strong>Cara Kerja:</strong> VirtualBox membuat yang meniru hardware komputer (CPU, RAM, hardisk, jaringan). Sistem operasi (guest OS) berjalan di atas OS utama (host OS).</p>
+    <p><strong>Fungsi/Kegunaan:</strong></p>
+    <ul>
+        <li>Menjalankan OS lain tanpa instal ulang komputer</li>
+        <li>Uji coba software atau OS</li>
+        <li>Belajar jaringan & server</li>
+        <li>Testing aplikasi</li>
+    </ul>
+    <p><strong>Konfigurasi / Cara Menggunakan:</strong></p>
+    <ol>
+        <li>Install VirtualBox</li>
+        <li>Buat VM baru</li>
+        <li>Pilih jenis OS (Windows/Linux)</li>
+        <li>Atur RAM, CPU, storage</li>
+        <li>Masukkan file ISO OS</li>
+        <li>Jalankan VM dan install OS</li>
+    </ol>
+    <p><strong>Manfaat:</strong> Gratis, mudah digunakan, cocok untuk pemula, mendukung banyak OS, dan aman untuk eksperimen.</p>
+
+    <hr>
+
+    <h3>b. VMware</h3>
+    <p><strong>Pengertian:</strong> VMware adalah platform virtualisasi yang banyak digunakan di perusahaan dan data center untuk menjalankan beberapa mesin virtual dalam satu server fisik.</p>
+    <p><strong>Cara Kerja:</strong> VMware menggunakan hypervisor untuk membagi sumber daya hardware menjadi beberapa mesin virtual yang berjalan secara bersamaan.</p>
+    <p><strong>Fungsi / Kegunaan:</strong> Virtualisasi server, Cloud computing, Testing dan deployment aplikasi, Infrastruktur IT perusahaan.</p>
+    <p><strong>Konfigurasi / Cara Menggunakan:</strong></p>
+    <ol>
+        <li>Install VMware (Workstation atau ESXi).</li>
+        <li>Buat mesin virtual baru.</li>
+        <li>Atur CPU, RAM, dan storage.</li>
+<li>Install sistem operasi di VM.</li>
+<li>Kelola VM (snapshot, clone, jaringan).</li>
+<ol>
+    <p><strong>Manfaat:</strong></p>
+    <ul>
+        <li>Performa stabil.</li>
+        <li>Fitur enterprise lengkap.</li>
+        <li>Mendukung skala besar.</li>
+        <li>Manajemen dan keamanan lebih baik.</li>
+    </ul>
+    </ol>
+<h3>c. Proxmox</h3>
+
+    <p><strong>Pengertian</strong></p>
+    <p>Proxmox VE adalah platform virtualisasi berbasis Linux yang digunakan untuk mengelola mesin virtual dan container dalam satu sistem server.</p>
+
+    <p><strong>Cara Kerja</strong></p>
+    <p>Proxmox bekerja langsung di atas hardware (bare metal) sebagai hypervisor dan dikelola melalui web interface.</p>
+
+    <p><strong>Fungsi / Kegunaan</strong></p>
+    <ul>
+        <li>Virtualisasi server.</li>
+        <li>Membuat private cloud.</li>
+        <li>Manajemen VM dan container.</li>
+        <li>Mendukung High Availability.</li>
+    </ul>
+
+    <p><strong>Konfigurasi / Cara Menggunakan</strong></p>
+    <ol>
+        <li>Install Proxmox di server.</li>
+        <li>Akses web panel melalui browser.</li>
+        <li>Buat VM atau container.</li>
+        <li>Atur resource dan storage.</li>
+        <li>Jalankan dan kelola VM.</li>
+    </ol>
+
+    <p><strong>Manfaat</strong></p>
+    <ul>
+        <li>Gratis dan open-source.</li>
+        <li>Manajemen berbasis web yang mudah.</li>
+        <li>Mendukung VM dan container.</li>
+        <li>Cocok untuk server dan lab jaringan.</li>
+    </ul>
+    <h2>Profesi Dan Peluang Usaha Dalam Bidang IT</h2>
+<div class="table-responsive">
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr bgcolor="#f2f2f2">
+
+                <th>No</th>
+                <th>Jenis Profesi</th>
+                <th>Deskripsi</th>
+                <th>Contoh Pekerjaan</th>
+                <th>Peluang Usaha</th>
+                <th>Gambar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Konten Creator</td>
+                <td>Membuat dan mengelola konten digital untuk media online</td>
+                <td>YouTuber, TikToker, Blogger, Streamer</td>
+                <td>jasa pembuatan konten, monetisasi YouTube, endorsement</td>
+                <td><img src="creator.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Desain Grafis</td>
+                <td>Mendesain visual untuk kebutuhan promosi dan branding</td>
+                <td>Desainer logo, poster, banner</td>
+                <td>Jasa desain logo, Poster, branding UMKM</td>
+<td><img src="grafis.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Desain UI/UX</td>
+                <td>Mendesain tampilan dan pengalaman pengguna aplikasi atau website</td>
+                <td>UI Desainer, UX Desainer, Reseacher</td>
+                <td>Jasa desain aplikasi atau website</td>
+                                <td><img src="ukm.jpeg" alt=""></td>
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pengembangan Software</td>
+                <td>Mengembangkan perangkat lunak sesuai kebutuhan</td>
+                <td>Software engineer, programer</td>
+                <td>Jasa pembuatan software custom</td>
+                 <td><img src="software.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pengembangan Web</td>
+                <td>Membuat dan mengelola website</td>
+                <td>Web developer, Front-End/Back-end developer</td>
+                <td>jasa pembuatan website, web company profile</td>
+                   <td><img src="web.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Pengembangan Aplikasi Mobile</td>
+                <td>membuat aplikasi berbasis Android/iOS</td>
+                <td>Mobile app developer</td>
+                <td>jasa pembuatan aplikasi mobile</td>
+                   <td><img src="mobile apps.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pengembangan Game</td>
+                <td>Membuat game digital untuk hiburan atau edukasi</td>
+                <td>Game developer, Game designer</td>
+                <td>Pembuatan dan penjualan game</td>
+                 <td><img src="game.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Internet Marketer</td>
+                <td>Melakukan pemasaran produk melalui internet</td>
+                <td>Digital marketer, Sosial media spesialis</td>
+                <td>Jasa iklan online, Manajemen media sosial</td>
+                 <td><img src="online marketing.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Analisis Basis Data</td>
+                <td>Mengelola dan menganalisis data untuk pengambilan keputusan</td>
+                <td>Data analis, Data administrator</td>
+                <td>Jasa pengolahan data dan analisis data</td>
+                 <td><img src="analisisdata.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Konsultan SEO</td>
+                <td>mengoptimalkan website agar mudah ditemukan di mesin pencarian</td>
+                <td>SEO Specialist</td>
+                <td>Jasa optimasi SEO website</td>
+                 <td><img src="seo.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Konsultan TI</td>
+                <td>Memberi solusi dan saran terkait teknologi informasi</td>
+                <td>IT Consultant</td>
+                <td>Jasa konsultan sistem TI</td>
+                 <td><img src="ti.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Konsultan Keamanan Jaringan</td>
+                <td>Menjaga dan meningkatkan keamanan jaringan</td>
+                <td>Network security engineer</td>
+                <td>Jasa audit dan keamanan jaringan</td>
+                 <td><img src="keamanan jaringan.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Pembisnis E-commerce</td>
+                <td>Menjalankan bisnis jual beli secara online</td>
+                <td>Owner online shop, Seller marketplace</td>
+                <td>Toko online, Dropshipping</td>
+                 <td><img src="pembisnis.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Proyek startup</td>
+                <td>Mengembangkan usaha berbasis teknologi dan inovasi</td>
+                <td>founder startup</td>
+                <td>mendirikan perusahaan rintisan berbasis TI</td>
+                 <td><img src="startup.jpg" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
+</html>
